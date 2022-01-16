@@ -1,0 +1,592 @@
+/*setingan  ukuran tampilan umum*/
+*{ 
+	margin: 0; 
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+/*tampilan Beranda index*/
+.runtext{
+	position: relative;
+  	top: 0;
+  	font-size: 20px;
+  	background: #2153cc;
+	font-family: "sans-serif";
+}
+.runtext marquee{
+	color: white;
+}
+
+.header{ 
+	min-height: 100vh;
+	width: 100%;
+	background-image: url('images/asli3.png');
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: right;
+}
+nav img{
+	width: 150px;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: #000;
+	text-decoration: none;
+	font-size: 20px;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0,5;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.text-box{
+	width: 55%;
+	color: #000;
+	position: absolute;
+	top: 220px;
+	left: 600px;
+	transition: tanslate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1{
+	font-size: 60px;
+}
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 22px;
+	color: #000;
+}
+.fa {
+  padding: 20px;
+  font-size: 100px;
+  width: 90px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 5%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+ background: #FFC0CB;
+  color: #000;
+}
+.fa-whatsapp {
+ background: green;
+  color: #000;
+}
+.fa-envelope {
+ background: #DC143C;
+  color: #000;
+}
+
+/*batas stimik catur sakti index.html */
+
+.course{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top:  100px;
+}
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+p{
+	color: #777;
+	font size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px
+}
+
+.container{
+	position: relative;
+	width: 1100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px 20px 10px;
+}
+.container .card{
+	max-width: 300px
+	height: 420px;
+	height: 215px
+	background #fff;
+	margin: 30px 10px;
+	padding: 20px; 16px;
+	display: flex;
+	border-radius: 4px;
+	flex-direction: column;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+	transition: 0.3s ease-in-out;
+}
+.container .card:hover{
+	height: 420px;
+}
+.container .card .imgBx{
+	position: relative;
+	background: #fff;
+	top: -60px;
+	left: 20px;
+	min-width: initial;
+	width: 260px;
+	height: 260px;
+	border-radius: 4px;
+	z-index: 1;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card .imgBx img{
+	max-width: 100%;
+	border-radius: 4px;
+}
+.container .card .content{
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	text-align: center;
+	color: #111
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+	transition-delay: 0s;
+}
+.container .card:hover .content{
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: 0.3s
+}
+
+/*batas dari seputar stimik catur sakti index.html */
+
+.campus{
+	width: auto;
+	margin: auto;
+	text-align: center;
+	padding-top: 10px;
+}
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.campus-col1 img{
+	width: 50%;
+}
+.campus-col2 img{
+	padding-top: 10px;
+	height: 100%;
+	width: 50%;
+	position: static;
+	top 0;
+	left: 0;
+}
+.campus-col3 img{
+	padding-top: 10px;
+	height: 100%;
+	width: 50%;
+	position: static;
+	top 0;
+	left: 0;
+
+/*batas dari Berita terkin kampus index.html */
+
+}
+.fasilitas{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.fasilitas-col{
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+}
+.fasilitas-col img{
+	width: 100%;
+	border-radius: 10px;
+}
+.fasilitas-col p{
+	padding: 0;
+}
+.fasilitas-col h3{
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+/*batas dari index.html atau Beranda */
+
+
+
+/*Tampilan Halaman Program Studi SI.SK.KA*/
+.sub-header{
+	height: 60vh;
+	width: 100%;
+	background-image: url("images/aaaa1.png");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #000;
+}
+.sub-header h1{
+	margin-top: 0px;
+}
+.PROGRAM STUDI STIMIK CATUR SAKTI KENDARI{
+	width: 80%;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+.Program-col{
+	color: #000;
+	width: auto;
+	margin: auto;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+.Program-col img{
+	width: 70%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px height: 420px;
+    height: 215px background #000;
+    padding: 20px;
+    16px: ;
+    display: flex;
+    border-radius: 4px;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 50%);
+}
+/* tombol setiang tapmpilan program studi si.sk.ka */
+.Programbtn {
+  	color: black;
+  	padding: 8px 12px;
+  	font-size: 16px;
+  	border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+/* Tersabung di index html */
+.ProgramStudi {
+  position: relative;
+  display: inline-block;
+}
+/*Tersabung di index html*/
+.Program-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/*untuk  Links pada tampian */
+.Program-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* animasinyaa */
+.Program-content a:hover {
+	background-color: #ddd;
+	border: 3px  solid #f44336;
+	background: #f44336;
+	transition: 1s;
+}
+/* Tampilkan menu tarik-turun saat mengarahkan kursor */
+.ProgramStudi:hover .Program-content {
+	display: block;
+}
+.program-colsk{
+	color: #000;
+	width: auto;
+	margin: auto;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 60px;
+
+}
+.Program-colsi{
+	color: #000;
+	width: auto;
+	margin: auto;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 60px;
+}
+.Program-colka{
+	color: #000;
+	width: auto;
+	margin: 10px;
+	text-align: left;
+	padding-top: 1in20px;
+	padding-bottom: 60px;
+}
+
+.Profilbtn {
+  	color: black;
+  	padding: 8px 12px;
+  	font-size: 16px;
+  	border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+/*batas dari Halaman Program Studi SI.SK.KA */
+
+
+
+
+/*Tampilan Halaman Profil Kampus sejarah.sara.berita.alamat.html*/
+.sub2-header{
+	height: 60vh;
+	width: 100%;
+	background-image: url("images/bb3.png");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #000;
+}
+/* tempat <div> - diperlukan untuk memposisikan konten tarik-turun*/
+.Profil1 {
+  position: relative;
+  display: inline-block;
+}
+/* content bawah */
+.Profil-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links tampilan */
+.Profil-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* rubah warna animasi */
+.Profil-content a:hover {
+	background-color: #ddd;
+	border: 3px  solid #f44336;
+	background: #f44336;
+	transition: 1s;
+}
+/* tampialan naik trun */
+.Profil1:hover .Profil-content {
+	display: block;
+}
+.Program-colsejarah{
+	color: #000;
+	width: auto;
+	margin: auto;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 60px;
+}
+	ol{
+	color: #777;
+	font size: 14px;
+	font-weight: 500px;
+	line-height: 15px;
+	padding: 25px;
+}
+.Program-colsara{
+	color: #000;
+	width: auto;
+	margin: 10px;
+	text-align: left;
+	padding-top: 120px;
+	padding-bottom: 60px;
+}
+.Alamat{
+	width: 100%;
+	margin: auto;
+	padding: 10px 10px;
+	margin-bottom: 10%
+}
+.Alamat iframe{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	max-width: 300px
+	height: 420px;
+	height: 215px
+	background #000;
+	padding: 20px; 16px;
+	display: flex;
+	border-radius: 4px;
+	flex-direction: column;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+/*batas dari  Halaman Profil Kampus sejarah.sara.berita.alamat.html */
+
+
+
+
+/*Tampilan halaman pendaftaran syarat.jadwal.biayajadwal.html */
+.sub3-header{
+	height: 60vh;
+	width: 100%;
+	background-image: url("images/b100.png");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #000;
+}
+.Daftarbtn {
+  	color: black;
+  	padding: 8px 12px;
+  	font-size: 16px;
+  	border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+/* dokument <div> - diperlukan untuk memposisikan konten tarik-turun */
+.Daftar1 {
+  position: relative;
+  display: inline-block;
+}
+/*Konten Dropdown */
+.Daftar-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* sebauh Links untuk dropdown */
+.Daftar-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* animasi tampilan Ubah warna tautan tarik-turun*/
+.Daftar-content a:hover {
+	background-color: #ddd;
+	border: 3px  solid #f44336;
+	background: #f44336;
+	transition: 1s;
+}
+/* Tampilkan menu tarik-turun saat mengarahkan kursor */
+.Daftar1:hover .Daftar-content {
+	display: block;
+}
+.Program-colsyarat{
+	color: #000;
+	width: auto;
+	margin: 10px;
+	text-align: left;
+	padding-top: 120px;
+	padding-bottom: 60px;
+}
+.Program-colbiaya{
+	color: #000;
+	width: auto;
+	margin: 10px;
+	text-align: left;
+	padding-top: 120px;
+	padding-bottom: 60px;
+}
+.data{
+	color: #000;
+	width: auto;
+	margin: auto;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 60px;
+}
+form {
+ 	height: 1320px;
+ 	padding: 120px;
+	border-radius: 100px;
+   	background: #fff;
+   	box-shadow: 0 0 100px  red; 
+   	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 20%;
+}
+.banner {
+	position: relative;
+	height: 159px;
+   	background-image: url("images/logoSTMIKCS21.png");  
+   	background-size: contain;
+   	display: flex;
+   	justify-content: center;
+   	align-items: center;
+    text-align: center;
+}
+.banner::after {
+    background-color: rgba(0, 0, 0, 0.3); 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ }
+ button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; 
+      background: red;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+.Program-coljadwal{
+	color: #000;
+	width: auto;
+	margin: 10px;
+	text-align: left;
+	padding-top: 120px;
+	padding-bottom: 60px;
+}
